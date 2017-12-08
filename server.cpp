@@ -9,7 +9,8 @@ using namespace Sync;
 //semephore
 mutex mtx;
 string coordinate = "0000";
-int previousID =3;
+//player 2 cannot go first so initiate to p2 that went last.
+int previousID =2;
 
 void turn (Socket* soc, int n){
     
